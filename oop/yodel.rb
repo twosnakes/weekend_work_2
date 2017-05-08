@@ -9,7 +9,10 @@
 # constructor accordingly.
 
 class Yodel
-
+attr_reader :segment, :count
+def articulate
+  @articulate = segment * count.to_s
+  end
 end
 
 
